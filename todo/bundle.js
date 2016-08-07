@@ -21614,7 +21614,7 @@
 
 
 	// module
-	exports.push([module.id, "._1-SqROHSDgL9DyMtIrnxLg {\n    display: flex;\n    justify-content: center;\n}\n\n._3dtc762uV_8Oydq0qMJOmv {\n    text-align: center;\n    list-style-type: none;\n    padding: 0;\n    margin: 0;\n}\n\n._1lz8V_KQRVdxgAS9cWCQqb {\n    box-sizing: border-box;\n    padding: 15px 25px;\n    border-bottom: 1px dotted darkgray;\n}\n\n._1lz8V_KQRVdxgAS9cWCQqb:last-child {\n    border-bottom: none;\n}\n\n.a_LPzhTG9-Qb5QJ3fM2F {\n    text-decoration: line-through;\n    background: gray;\n}\n\n.t7pMx49dBPyZl79uB_fB1 {\n    text-decoration: none;\n    background: lightgray;\n}", ""]);
+	exports.push([module.id, "._1-SqROHSDgL9DyMtIrnxLg {\n    display: flex;\n    justify-content: center;\n}\n\n._3dtc762uV_8Oydq0qMJOmv {\n    text-align: center;\n    list-style-type: none;\n    padding: 0;\n    margin: 0;\n}\n\n._1lz8V_KQRVdxgAS9cWCQqb {\n    box-sizing: border-box;\n    padding: 15px 25px;\n    border-bottom: 1px dotted darkgray;\n    -webkit-touch-callout: none; /* iOS Safari */\n    -webkit-user-select: none;   /* Chrome/Safari/Opera */\n    -khtml-user-select: none;    /* Konqueror */\n    -moz-user-select: none;      /* Firefox */\n    -ms-user-select: none;       /* Internet Explorer/Edge */\n    user-select: none;           /* Non-prefixed version, currently */\n}\n\n._1lz8V_KQRVdxgAS9cWCQqb:last-child {\n    border-bottom: none;\n}\n\n.a_LPzhTG9-Qb5QJ3fM2F {\n    text-decoration: line-through;\n    background: gray;\n}\n\n.t7pMx49dBPyZl79uB_fB1 {\n    text-decoration: none;\n    background: lightgray;\n}", ""]);
 
 	// exports
 	exports.locals = {
