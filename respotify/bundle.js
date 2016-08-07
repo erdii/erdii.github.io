@@ -74,6 +74,10 @@
 
 	var musicApi = _interopRequireWildcard(_musicApi);
 
+	var _router = __webpack_require__(215);
+
+	var _router2 = _interopRequireDefault(_router);
+
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -97,6 +101,9 @@
 	            tracks: [],
 	            currentPreview: null
 	        };
+
+	        window.router = new _router2.default();
+
 	        _this.getAlbums = _this.getAlbums.bind(_this);
 	        _this.processAlbums = _this.processAlbums.bind(_this);
 	        _this.getTracks = _this.getTracks.bind(_this);
@@ -21586,6 +21593,10 @@
 	        };
 	        _this.handleInputChange = _this.handleInputChange.bind(_this);
 	        _this.handleKeyPress = _this.handleKeyPress.bind(_this);
+
+	        window.router.use("artist", function (term) {
+	            _this.handleRoute(term);
+	        });
 	        return _this;
 	    }
 
@@ -21605,7 +21616,20 @@
 	        key: "handleKeyPress",
 	        value: function handleKeyPress(event) {
 	            if (event.key === "Enter") {
-	                this.props.getAlbums(this.state.searchTerm);
+	                var term = this.state.searchTerm;
+	                window.router.route = "artist/" + term;
+	            }
+	        }
+	    }, {
+	        key: "handleRoute",
+	        value: function handleRoute(term) {
+	            if (term) {
+	                if (term !== this.state.searchTerm) {
+	                    this.setState({
+	                        searchTerm: term
+	                    });
+	                }
+	                this.props.getAlbums(term);
 	            }
 	        }
 	    }, {
@@ -21627,7 +21651,8 @@
 	                    },
 	                    onChange: this.handleInputChange,
 	                    onKeyPress: this.handleKeyPress,
-	                    className: _SearchBar2.default.input
+	                    className: _SearchBar2.default.input,
+	                    value: this.state.searchTerm
 	                })
 	            );
 	        }
@@ -23742,6 +23767,102 @@
 	  };
 	};
 
+
+/***/ },
+/* 215 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/josh/Playgrounds/react/respotify/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/josh/Playgrounds/react/respotify/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Router = function () {
+	    function Router() {
+	        var _this = this;
+
+	        var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+
+	        _classCallCheck(this, Router);
+
+	        this.popHandler = this.popHandler.bind(this);
+	        window.onpopstate = this.popHandler;
+
+	        this.routeHandlers = {};
+
+	        setTimeout(function () {
+	            _this.triggerRouteHandlers();
+	        }, 1);
+	    }
+
+	    _createClass(Router, [{
+	        key: "use",
+	        value: function use(route, handler) {
+	            this.routeHandlers[route] = handler;
+	        }
+	    }, {
+	        key: "free",
+	        value: function free(route) {
+	            delete this.routeHandlers[route];
+	        }
+	    }, {
+	        key: "triggerRouteHandlers",
+	        value: function triggerRouteHandlers() {
+	            var current = this.route;
+	            var firstLevel = current[0];
+
+	            if (this.routeHandlers.hasOwnProperty(firstLevel)) {
+	                this.routeHandlers[firstLevel](current[1]);
+	            } else {
+	                console.error("no route ;(");
+	            }
+	        }
+	    }, {
+	        key: "popHandler",
+	        value: function popHandler(event) {
+	            console.log("state:", event.state);
+	            this.route = event.state.route;
+	        }
+	    }, {
+	        key: "route",
+	        get: function get() {
+	            var current = window.location.hash;
+	            var tokens = current.replace(/#/, "").split("/");
+	            var result = tokens.slice(0, 1);
+	            var tail = tokens.slice(1);
+
+	            if (tail.length) {
+	                result.push(tail.join("/"));
+	            }
+
+	            return result;
+	        },
+	        set: function set(path) {
+	            console.log("new route:", path);
+
+	            var state = {
+	                route: path
+	            };
+
+	            history.pushState(state, document.title, "#" + state.route);
+
+	            this.triggerRouteHandlers();
+	        }
+	    }]);
+
+	    return Router;
+	}();
+
+	exports.default = Router;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/josh/Playgrounds/react/respotify/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "router.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }
 /******/ ]);
