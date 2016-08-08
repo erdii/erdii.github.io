@@ -79,60 +79,60 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var App = function (_React$Component) {
-	    _inherits(App, _React$Component);
+		_inherits(App, _React$Component);
 
-	    function App() {
-	        _classCallCheck(this, App);
+		function App() {
+			_classCallCheck(this, App);
 
-	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(App).call(this));
+			var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(App).call(this));
 
-	        _this.state = {
-	            todos: [{
-	                text: "Finish this project",
-	                finished: true
-	            }]
-	        };
+			_this.state = {
+				todos: [{
+					text: "Finish this project",
+					finished: true
+				}]
+			};
 
-	        _this.onClickTodo = _this.onClickTodo.bind(_this);
-	        _this.onAdd = _this.onAdd.bind(_this);
-	        return _this;
-	    }
+			_this.onClickTodo = _this.onClickTodo.bind(_this);
+			_this.onAdd = _this.onAdd.bind(_this);
+			return _this;
+		}
 
-	    _createClass(App, [{
-	        key: "onClickTodo",
-	        value: function onClickTodo(index) {
-	            var oldState = JSON.parse(JSON.stringify(this.state));
-	            var clickedTodo = oldState.todos[index];
-	            clickedTodo.finished = !clickedTodo.finished;
-	            this.setState({
-	                todos: oldState.todos
-	            });
-	        }
-	    }, {
-	        key: "onAdd",
-	        value: function onAdd(todo) {
-	            var oldState = JSON.parse(JSON.stringify(this.state));
-	            oldState.todos.push({
-	                text: todo,
-	                finished: false
-	            });
-	            this.setState({
-	                todos: oldState.todos
-	            });
-	        }
-	    }, {
-	        key: "render",
-	        value: function render() {
-	            return _react2.default.createElement(
-	                "div",
-	                { className: _App2.default.div },
-	                _react2.default.createElement(_TodoInput2.default, { onAdd: this.onAdd }),
-	                _react2.default.createElement(_TodoList2.default, { todos: this.state.todos, onClickTodo: this.onClickTodo })
-	            );
-	        }
-	    }]);
+		_createClass(App, [{
+			key: "onClickTodo",
+			value: function onClickTodo(index) {
+				var oldState = JSON.parse(JSON.stringify(this.state));
+				var clickedTodo = oldState.todos[index];
+				clickedTodo.finished = !clickedTodo.finished;
+				this.setState({
+					todos: oldState.todos
+				});
+			}
+		}, {
+			key: "onAdd",
+			value: function onAdd(todo) {
+				var oldState = JSON.parse(JSON.stringify(this.state));
+				oldState.todos.push({
+					text: todo,
+					finished: false
+				});
+				this.setState({
+					todos: oldState.todos
+				});
+			}
+		}, {
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"div",
+					{ className: _App2.default.div },
+					_react2.default.createElement(_TodoInput2.default, { onAdd: this.onAdd }),
+					_react2.default.createElement(_TodoList2.default, { todos: this.state.todos, onClickTodo: this.onClickTodo })
+				);
+			}
+		}]);
 
-	    return App;
+		return App;
 	}(_react2.default.Component);
 
 	_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("container"));
@@ -21526,7 +21526,7 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+		value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -21540,39 +21540,43 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var TodoList = function TodoList(props) {
-	    var todos = props.todos.map(function (todo, index) {
-	        var className = _TodoList2.default.li + " ";
-	        if (!todo.finished) {
-	            className += _TodoList2.default.unfinished;
-	        } else {
-	            className += _TodoList2.default.finished;
-	        }
+		var todos = props.todos.map(function (todo, index) {
+			var className = _TodoList2.default.li + " ";
+			if (!todo.finished) {
+				className += _TodoList2.default.unfinished;
+			} else {
+				className += _TodoList2.default.finished;
+			}
 
-	        var onClick = function onClick() {
-	            props.onClickTodo(index);
-	        };
+			var onClick = function onClick() {
+				props.onClickTodo(index);
+			};
 
-	        return _react2.default.createElement(
-	            "li",
-	            { className: className, onClick: onClick, key: index },
-	            todo.text
-	        );
-	    });
+			return _react2.default.createElement(
+				"li",
+				{ className: className, onClick: onClick, key: index },
+				todo.text
+			);
+		});
 
-	    return _react2.default.createElement(
-	        "div",
-	        { className: _TodoList2.default.div },
-	        _react2.default.createElement(
-	            "ul",
-	            { className: _TodoList2.default.ul },
-	            todos
-	        )
-	    );
+		return _react2.default.createElement(
+			"div",
+			{ className: _TodoList2.default.div },
+			_react2.default.createElement(
+				"div",
+				{ className: _TodoList2.default.wrapper },
+				_react2.default.createElement(
+					"ul",
+					{ className: _TodoList2.default.ul },
+					todos
+				)
+			)
+		);
 	};
 
 	TodoList.propTypes = {
-	    todos: _react2.default.PropTypes.array.isRequired,
-	    onClickTodo: _react2.default.PropTypes.func.isRequired
+		todos: _react2.default.PropTypes.array.isRequired,
+		onClickTodo: _react2.default.PropTypes.func.isRequired
 	};
 
 	exports.default = TodoList;
@@ -21614,11 +21618,12 @@
 
 
 	// module
-	exports.push([module.id, "._1-SqROHSDgL9DyMtIrnxLg {\n    display: flex;\n    justify-content: center;\n}\n\n._3dtc762uV_8Oydq0qMJOmv {\n    text-align: center;\n    list-style-type: none;\n    padding: 0;\n    margin: 0;\n}\n\n._1lz8V_KQRVdxgAS9cWCQqb {\n    box-sizing: border-box;\n    padding: 15px 25px;\n    border-bottom: 1px dotted darkgray;\n    -webkit-touch-callout: none; /* iOS Safari */\n    -webkit-user-select: none;   /* Chrome/Safari/Opera */\n    -khtml-user-select: none;    /* Konqueror */\n    -moz-user-select: none;      /* Firefox */\n    -ms-user-select: none;       /* Internet Explorer/Edge */\n    user-select: none;           /* Non-prefixed version, currently */\n}\n\n._1lz8V_KQRVdxgAS9cWCQqb:last-child {\n    border-bottom: none;\n}\n\n.a_LPzhTG9-Qb5QJ3fM2F {\n    text-decoration: line-through;\n    background: gray;\n}\n\n.t7pMx49dBPyZl79uB_fB1 {\n    text-decoration: none;\n    background: lightgray;\n}", ""]);
+	exports.push([module.id, "._1-SqROHSDgL9DyMtIrnxLg {\n\tdisplay: flex;\n\tjustify-content: center;\n}\n\n.Ry9XmlinHvzybAGTzezga {\n\tbox-sizing: content-box;\n\tbackground: lightgray;\n\n\tpadding: 15px 50px;\n\tposition: relative;\n\twidth: 100%;\n\theight: 100%;\n\tbottom: 0;\n}\n\n._3dtc762uV_8Oydq0qMJOmv {\n\ttext-align: center;\n\tlist-style-type: none;\n\tpadding: 0;\n\tmargin: 0;\n}\n\n._1lz8V_KQRVdxgAS9cWCQqb {\n\tbox-sizing: border-box;\n\tpadding: 15px 25px;\n\tborder-bottom: 1px dotted darkgray;\n\t-webkit-touch-callout: none; /* iOS Safari */\n\t-webkit-user-select: none;   /* Chrome/Safari/Opera */\n\t-khtml-user-select: none;    /* Konqueror */\n\t-moz-user-select: none;      /* Firefox */\n\t-ms-user-select: none;       /* Internet Explorer/Edge */\n\tuser-select: none;           /* Non-prefixed version, currently */\n}\n\n._1lz8V_KQRVdxgAS9cWCQqb:last-child {\n\tborder-bottom: none;\n}\n\n._1lz8V_KQRVdxgAS9cWCQqb:hover {\n\tbackground: #c8f8f8;\n}\n\n.a_LPzhTG9-Qb5QJ3fM2F {\n\ttext-decoration: line-through;\n\tbackground: gray;\n}\n\n.t7pMx49dBPyZl79uB_fB1 {\n\ttext-decoration: none;\n\tbackground: lightgray;\n}", ""]);
 
 	// exports
 	exports.locals = {
 		"div": "_1-SqROHSDgL9DyMtIrnxLg",
+		"wrapper": "Ry9XmlinHvzybAGTzezga",
 		"ul": "_3dtc762uV_8Oydq0qMJOmv",
 		"li": "_1lz8V_KQRVdxgAS9cWCQqb",
 		"finished": "a_LPzhTG9-Qb5QJ3fM2F",
@@ -21990,7 +21995,7 @@
 		}, {
 			key: "handleKeyPress",
 			value: function handleKeyPress(event) {
-				if (event.key === "Enter") {
+				if (event.key === "Enter" && this.state.value) {
 					this.props.onAdd(this.state.value);
 					this.setState({
 						value: ""
@@ -22061,7 +22066,7 @@
 
 
 	// module
-	exports.push([module.id, "._3MXS4e67Kal90mowYDzeUb {\n    background: lightgrey;\n\n    display: flex;\n    justify-content: space-around;\n\n    padding: 25px 15px;\n}\n\n._1dzky6IZXy-Y642ZinUSRD {\n    background: lightgrey;\n    border: 2px dotted grey;\n\n    width: 50%;\n\n    padding: 20px 10px;\n    line-height: 28px;\n    font-size: 24px;\n    text-align: center;\n}\n\n._1dzky6IZXy-Y642ZinUSRD:focus {\n    background: grey;\n    width: 80%;\n}", ""]);
+	exports.push([module.id, "._3MXS4e67Kal90mowYDzeUb {\n\tbackground: lightgrey;\n\n\tdisplay: flex;\n\tjustify-content: space-around;\n\n\tpadding: 25px 15px;\n}\n\n._1dzky6IZXy-Y642ZinUSRD {\n\tbackground: lightgrey;\n\tborder: 2px dotted grey;\n\n\twidth: 50%;\n\n\tpadding: 20px 10px;\n\tline-height: 28px;\n\tfont-size: 24px;\n\ttext-align: center;\n}\n\n._1dzky6IZXy-Y642ZinUSRD:focus {\n\tbackground: grey;\n\twidth: 80%;\n}", ""]);
 
 	// exports
 	exports.locals = {
@@ -22104,7 +22109,7 @@
 
 
 	// module
-	exports.push([module.id, "._10IuMFdR9dqmlBijQBdsL6 {\n\tposition: fixed;\n\twidth: 100%;\n\theight: 100%;\n\tmargin: 0;\n\tpadding: 0;\n}", ""]);
+	exports.push([module.id, "html, body {\n\tmargin: 0;\n\tpadding: 0;\n}\n\n* {\n\ttransition: all 150ms ease;\n}\n\n._10IuMFdR9dqmlBijQBdsL6 {\n\tposition: fixed;\n\twidth: 100%;\n\theight: 100%;\n\tmargin: 0;\n\tpadding: 0;\n}", ""]);
 
 	// exports
 	exports.locals = {
