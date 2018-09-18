@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Shared thoughts</title>
+    <link>https://erdii.github.io/tags/</link>
+    <description>Recent content in Tags on Shared thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Mar 2017 19:10:55 +0100</lastBuildDate>
+    
+	<atom:link href="https://erdii.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Caddy</title>
+      <link>https://erdii.github.io/tags/caddy/</link>
+      <pubDate>Tue, 21 Mar 2017 19:10:55 +0100</pubDate>
+      
+      <guid>https://erdii.github.io/tags/caddy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cryptocurrency</title>
+      <link>https://erdii.github.io/tags/cryptocurrency/</link>
+      <pubDate>Fri, 11 Aug 2017 16:43:12 +0200</pubDate>
+      
+      <guid>https://erdii.github.io/tags/cryptocurrency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://erdii.github.io/tags/development/</link>
+      <pubDate>Fri, 11 Aug 2017 16:43:12 +0200</pubDate>
+      
+      <guid>https://erdii.github.io/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://erdii.github.io/tags/docker/</link>
+      <pubDate>Wed, 30 Mar 2016 16:01:04 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://erdii.github.io/tags/git/</link>
+      <pubDate>Tue, 22 Mar 2016 14:35:46 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>https://erdii.github.io/tags/google/</link>
+      <pubDate>Wed, 23 Mar 2016 13:39:56 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Https</title>
+      <link>https://erdii.github.io/tags/https/</link>
+      <pubDate>Tue, 21 Mar 2017 19:10:55 +0100</pubDate>
+      
+      <guid>https://erdii.github.io/tags/https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iota</title>
+      <link>https://erdii.github.io/tags/iota/</link>
+      <pubDate>Fri, 11 Aug 2017 16:43:12 +0200</pubDate>
+      
+      <guid>https://erdii.github.io/tags/iota/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Letsencrypt</title>
+      <link>https://erdii.github.io/tags/letsencrypt/</link>
+      <pubDate>Tue, 21 Mar 2017 19:10:55 +0100</pubDate>
+      
+      <guid>https://erdii.github.io/tags/letsencrypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nginx</title>
+      <link>https://erdii.github.io/tags/nginx/</link>
+      <pubDate>Sun, 24 Jan 2016 14:15:32 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Postgres</title>
+      <link>https://erdii.github.io/tags/postgres/</link>
+      <pubDate>Wed, 30 Mar 2016 16:01:04 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/tags/postgres/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://erdii.github.io/tags/security/</link>
+      <pubDate>Tue, 16 Feb 2016 09:49:40 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ssl</title>
+      <link>https://erdii.github.io/tags/ssl/</link>
+      <pubDate>Sat, 23 Jan 2016 16:32:35 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/tags/ssl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webapp</title>
+      <link>https://erdii.github.io/tags/webapp/</link>
+      <pubDate>Thu, 18 Feb 2016 15:47:57 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/tags/webapp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webdav</title>
+      <link>https://erdii.github.io/tags/webdav/</link>
+      <pubDate>Wed, 23 Mar 2016 13:39:56 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/tags/webdav/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

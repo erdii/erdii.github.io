@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shared thoughts</title>
+    <link>https://erdii.github.io/</link>
+    <description>Recent content on Shared thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Aug 2017 16:43:12 +0200</lastBuildDate>
+    
+	<atom:link href="https://erdii.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I wrote a IOTA Wallet Seed Generator Tool</title>
+      <link>https://erdii.github.io/2017/08/11/iota-wallet-seed-generator-tool/</link>
+      <pubDate>Fri, 11 Aug 2017 16:43:12 +0200</pubDate>
+      
+      <guid>https://erdii.github.io/2017/08/11/iota-wallet-seed-generator-tool/</guid>
+      <description>UPDATE: i changed the source of the generator - if you want to see the updated source, please head over to the Github repo
+Because I needed a quick (and reasonable secure) way to generate IOTA wallet seeds, I wrote a tool in Go.
+this is the source code - so you can compile it yourself. you can also download it here (signature - my keybase profile).
+Feel free to leave any feedback :)</description>
+    </item>
+    
+    <item>
+      <title>TIL how to use caddy as automatic https reverse proxy</title>
+      <link>https://erdii.github.io/post/til-how-to-use-caddy-as-automatic-https-reverse-proxy/</link>
+      <pubDate>Tue, 21 Mar 2017 19:10:55 +0100</pubDate>
+      
+      <guid>https://erdii.github.io/post/til-how-to-use-caddy-as-automatic-https-reverse-proxy/</guid>
+      <description>Hey Blog! Long time no see&amp;hellip; Today I will show you how to download and execute caddy - an automatic https web server and reverse proxy written in Go!
+ be me.
+browse the interwebs.
+see caddy - a fully automatic https server
+togoodtobetrue.jpg
+write script to download caddy from their cdn
+and create a Caddyfile on a spare server
+itsworking.exe
+best day ever - free ssl certs with auto renewal</description>
+    </item>
+    
+    <item>
+      <title>TIL how to run postgresql in docker and persist the database</title>
+      <link>https://erdii.github.io/2016/03/30/til-how-to-run-postgresql-in-docker-and-persist-the-database/</link>
+      <pubDate>Wed, 30 Mar 2016 16:01:04 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/2016/03/30/til-how-to-run-postgresql-in-docker-and-persist-the-database/</guid>
+      <description>Today I needed a postgres database for development that persisted its data when recreating the container. That&amp;rsquo;s not docker&amp;rsquo;s default behaviour, but docker volumes to the rescue!
+This is the command to run a postgres container that persist it&amp;rsquo;s data in /var/yourpgdata:
+docker run \ --name pgresql \ -d \ -p 5432:5432 \ -e POSTGRES_USER=yourpguser \ -e POSTGRES_PASSWORD=yourpgpass \ -e POSTGRES_DB=yourpgdb \ -v /var/yourpgdata:/var/lib/postgresql/data  Fine&amp;hellip; but what does this mean?</description>
+    </item>
+    
+    <item>
+      <title>TIL how to (re)enable syncing your shared google calendars</title>
+      <link>https://erdii.github.io/2016/03/23/til-how-to-re-enable-syncing-your-shared-google-calendars/</link>
+      <pubDate>Wed, 23 Mar 2016 13:39:56 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/2016/03/23/til-how-to-re-enable-syncing-your-shared-google-calendars/</guid>
+      <description>Today i opened my Calendar app on OS X and all my coworkers shared calendars had vanished&amp;hellip; And there&amp;rsquo;s no option to re-enable them from within the app itself. After a short investigation I found this link:
+https://calendar.google.com/calendar/syncselect
+Just go there and tick all calendars you want to sync.</description>
+    </item>
+    
+    <item>
+      <title>TIL how to rename/move folders in git projects</title>
+      <link>https://erdii.github.io/2016/03/22/til-how-to-rename-or-move-folders-in-git-projects/</link>
+      <pubDate>Tue, 22 Mar 2016 14:35:46 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/2016/03/22/til-how-to-rename-or-move-folders-in-git-projects/</guid>
+      <description>Today I had the case that I wanted to rename a subfolder in a git-project at work. &amp;ldquo;Easy&amp;rdquo; I thought. Just rename the file in finder, stage all un-staged changes in SourceTree, commit and push.
+But&amp;hellip; the only thing that happened was that SourceTree complained about not being able to find files in the old foldername. So I googled a bit and found a solution.
+How to really do it Just use git mv on the shell!</description>
+    </item>
+    
+    <item>
+      <title>TIL that you need to remove your stopped Docker containers from time to time (and how to do it)</title>
+      <link>https://erdii.github.io/2016/02/18/til-that-you-need-to-remove-your-stopped-docker-containers-from-time-to-time-and-how-to-do-it/</link>
+      <pubDate>Thu, 18 Feb 2016 15:47:57 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/2016/02/18/til-that-you-need-to-remove-your-stopped-docker-containers-from-time-to-time-and-how-to-do-it/</guid>
+      <description>If you ever developed with Docker, you have to acknowledge that it is great!
+Ok&amp;hellip; you have to wrap your brain around an additional layer with all those caveats we know and love (volumes, path in- and outside of containers, &amp;hellip;), but it lets you bundle all your dependencies at build time and then ship an image that will run in every docker-compatible runtime!
+When you develop with Docker and do a lot of start/stop/build actions you will inevitably clutter your Docker Host with many unused containers.</description>
+    </item>
+    
+    <item>
+      <title>TIL why User emails should always be lowercased before using them as a login qualifier</title>
+      <link>https://erdii.github.io/2016/02/17/til-why-user-emails-should-always-be-lowercased-before-using-them-as-a-login-2/</link>
+      <pubDate>Wed, 17 Feb 2016 13:23:05 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/2016/02/17/til-why-user-emails-should-always-be-lowercased-before-using-them-as-a-login-2/</guid>
+      <description>In one project at work we implemented a passwordless login where you enter your email and then prove that you own this email-account by clicking on the link we sent you.
+When I tried to log in with my (mistakenly uppercased) email-adress Erdii@werise.de I got an email, but this was not my account&amp;hellip; It was empty.
+Then it struck me. I used the entered email as a case-sensitive identifier to the account and obviously &amp;quot;Erdii@werise.</description>
+    </item>
+    
+    <item>
+      <title>TIL why potentially destructive actions on a user-facing API should NOT use HTTP GET</title>
+      <link>https://erdii.github.io/2016/02/16/til-why-potentially-destructive-actions-on-a-user-facing-api-should-not-use-http-get/</link>
+      <pubDate>Tue, 16 Feb 2016 09:49:40 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/2016/02/16/til-why-potentially-destructive-actions-on-a-user-facing-api-should-not-use-http-get/</guid>
+      <description>Imagine a commentbox, where each comment has to be approved by the moderator in his backend.
+If the backend used GET requests for the comment moderation, the url to moderate a post should look something like this: http://yourdomain.com/moderate/:decision/:postid
+For example:
+ http://yourdomain.com/moderate/allow/1 http://yourdomain.com/moderate/deny/2 &amp;hellip;  If some evil person posted a comment and knew their postid (lets say 12) they could try to email you a link to http://yourdomain.com/moderate/allow/12 with a caption that says Cute cat gifs, you would click on it and BOOM the comment would be published&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>TIL when to sanitize user input in a web application</title>
+      <link>https://erdii.github.io/2016/02/15/til-how-to-sanitize-user-input-in-a-web-application/</link>
+      <pubDate>Mon, 15 Feb 2016 15:29:30 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/2016/02/15/til-how-to-sanitize-user-input-in-a-web-application/</guid>
+      <description>When a webapp takes user input (like a blog post or comment) and later renders that input into a HTML-Page, the webapp has to ensure that no malicious &amp;lt;script&amp;gt; tags or anything else is delivered to the viewer.
+How to do that is actually pretty easy&amp;hellip; Just replace &amp;quot; &#39; &amp;lt; and &amp;gt; with their HTML-Entity-Counterparts. But when do we have to do it??
+Because we want the input&amp;rsquo;s author to see the exact same thing she entered into the text field, the webapp should not sanitize the text before it gets saved into the database, but rather before it gets delivered to the viewing client.</description>
+    </item>
+    
+    <item>
+      <title>My Example conf.d/mydomain.conf</title>
+      <link>https://erdii.github.io/2016/01/24/my-example-conf-d/</link>
+      <pubDate>Sun, 24 Jan 2016 14:15:32 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/2016/01/24/my-example-conf-d/</guid>
+      <description>This is my example Nginx reverse-proxy + hardened https config (you need nginx/1.9.9):
+# redirect all http requests to https server { listen 80; server_name www.werise.de; server_name alias.werise.de; return 301 https://$server_name$request_uri; } # define a new cache (use different names and paths for different caches! proxy_cache_path /var/nginx_cache/blog.werise.de levels=1:2 keys_zone=blog_cache:10m max_size=512m inactive=60m use_temp_path=off; # https server block server { listen 443 ssl http2; listen [::]:443 ssl http2; server_name blog.werise.de; ssl_certificate /etc/letsencrypt/live/mydomain.com/fullchain.pem; ssl_certificate_key /etc/letsencrypt/live/mydomain.</description>
+    </item>
+    
+    <item>
+      <title>Setting up a free letsencrypt ssl certificate with nginx</title>
+      <link>https://erdii.github.io/2016/01/23/setting-up-a-letsencrypt-ssl-cert-with-nginx/</link>
+      <pubDate>Sat, 23 Jan 2016 16:32:35 +0000</pubDate>
+      
+      <guid>https://erdii.github.io/2016/01/23/setting-up-a-letsencrypt-ssl-cert-with-nginx/</guid>
+      <description>We all know that the Five Eyes (and alot of other ugly people) collect massive amounts of metadata from public internet traffic, and you want to do something about it.
+Yes, you can do something, too. If we spam them with encrypted traffic, the amount of work needed to decrypt and read it will become unbearable for them.
+Letsencrypt offers a free way to get ssl certificates for your http(s) web-server.</description>
+    </item>
+    
+  </channel>
+</rss>
