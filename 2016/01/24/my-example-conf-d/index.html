@@ -21,7 +21,7 @@
 <meta property="og:description" content="This is my example Nginx reverse-proxy &#43; hardened https config (you need nginx/1.9.9):
 # redirect all http requests to https server { listen 80; server_name www.werise.de; server_name alias.werise.de; return 301 https://$server_name$request_uri; } # define a new cache (use different names and paths for different caches! proxy_cache_path /var/nginx_cache/blog.werise.de levels=1:2 keys_zone=blog_cache:10m max_size=512m inactive=60m use_temp_path=off; # https server block server { listen 443 ssl http2; listen [::]:443 ssl http2; server_name blog.werise.de; ssl_certificate /etc/letsencrypt/live/mydomain.com/fullchain.pem; ssl_certificate_key /etc/letsencrypt/live/mydomain." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://erdii.github.io/2016/01/24/my-example-conf-d/" /><meta property="article:published_time" content="2016-01-24T14:15:32&#43;00:00"/>
+<meta property="og:url" content="https://erdii.engineering/2016/01/24/my-example-conf-d/" /><meta property="article:published_time" content="2016-01-24T14:15:32&#43;00:00"/>
 <meta property="article:modified_time" content="2016-01-24T14:15:32&#43;00:00"/>
     
 
@@ -33,7 +33,7 @@
     
     
     
-    <link rel="canonical" href="https://erdii.github.io/2016/01/24/my-example-conf-d/">
+    <link rel="canonical" href="https://erdii.engineering/2016/01/24/my-example-conf-d/">
     
     
     <link rel="icon" sizes="any" href="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%23000'/%3E%3C/svg%3E">

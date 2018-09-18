@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Letsencrypt on Shared thoughts</title>
-    <link>https://erdii.github.io/tags/letsencrypt/</link>
+    <link>https://erdii.engineering/tags/letsencrypt/</link>
     <description>Recent content in Letsencrypt on Shared thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Mar 2017 19:10:55 +0100</lastBuildDate>
     
-	<atom:link href="https://erdii.github.io/tags/letsencrypt/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://erdii.engineering/tags/letsencrypt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>TIL how to use caddy as automatic https reverse proxy</title>
-      <link>https://erdii.github.io/post/til-how-to-use-caddy-as-automatic-https-reverse-proxy/</link>
+      <link>https://erdii.engineering/post/til-how-to-use-caddy-as-automatic-https-reverse-proxy/</link>
       <pubDate>Tue, 21 Mar 2017 19:10:55 +0100</pubDate>
       
-      <guid>https://erdii.github.io/post/til-how-to-use-caddy-as-automatic-https-reverse-proxy/</guid>
+      <guid>https://erdii.engineering/post/til-how-to-use-caddy-as-automatic-https-reverse-proxy/</guid>
       <description>Hey Blog! Long time no see&amp;hellip; Today I will show you how to download and execute caddy - an automatic https web server and reverse proxy written in Go!
  be me.
 browse the interwebs.
