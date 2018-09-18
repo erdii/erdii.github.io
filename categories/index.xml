@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shared thoughts</title>
+    <title>Categories on Shared thoughts</title>
     <link>https://erdii.github.io/categories/</link>
-    <description>Recent content on Shared thoughts</description>
+    <description>Recent content in Categories on Shared thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Mar 2017 19:10:55 +0100</lastBuildDate>
@@ -12,20 +12,12 @@
     
     
     <item>
-      <title>TIL how to use caddy as automatic https reverse proxy</title>
-      <link>https://erdii.github.io/post/til-how-to-use-caddy-as-automatic-https-reverse-proxy/</link>
+      <title></title>
+      <link>https://erdii.github.io/categories/</link>
       <pubDate>Tue, 21 Mar 2017 19:10:55 +0100</pubDate>
       
-      <guid>https://erdii.github.io/post/til-how-to-use-caddy-as-automatic-https-reverse-proxy/</guid>
-      <description>Hey Blog! Long time no see&amp;hellip; Today I will show you how to download and execute caddy - an automatic https web server and reverse proxy written in Go!
- be me.
-browse the interwebs.
-see caddy - a fully automatic https server
-togoodtobetrue.jpg
-write script to download caddy from their cdn
-and create a Caddyfile on a spare server
-itsworking.exe
-best day ever - free ssl certs with auto renewal</description>
+      <guid>https://erdii.github.io/categories/</guid>
+      <description></description>
     </item>
     
   </channel>
