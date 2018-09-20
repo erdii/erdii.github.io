@@ -1,37 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Docker on Shared thoughts</title>
-    <link>https://erdii.engineering/tags/docker/</link>
-    <description>Recent content in Docker on Shared thoughts</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 30 Mar 2016 16:01:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://erdii.engineering/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>TIL how to run postgresql in docker and persist the database</title>
-      <link>https://erdii.engineering/2016/03/30/til-how-to-run-postgresql-in-docker-and-persist-the-database/</link>
-      <pubDate>Wed, 30 Mar 2016 16:01:04 +0000</pubDate>
-      
-      <guid>https://erdii.engineering/2016/03/30/til-how-to-run-postgresql-in-docker-and-persist-the-database/</guid>
-      <description>Today I needed a postgres database for development that persisted its data when recreating the container. That&amp;rsquo;s not docker&amp;rsquo;s default behaviour, but docker volumes to the rescue!
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on Shared thoughts</title><link>https://erdii.engineering/tags/docker/</link><description>Recent content in Docker on Shared thoughts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 30 Mar 2016 16:01:04 +0000</lastBuildDate><atom:link href="https://erdii.engineering/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>TIL how to run postgresql in docker and persist the database</title><link>https://erdii.engineering/2016/03/30/til-how-to-run-postgresql-in-docker-and-persist-the-database/</link><pubDate>Wed, 30 Mar 2016 16:01:04 +0000</pubDate><guid>https://erdii.engineering/2016/03/30/til-how-to-run-postgresql-in-docker-and-persist-the-database/</guid><description>Today I needed a postgres database for development that persisted its data when recreating the container. That&amp;rsquo;s not docker&amp;rsquo;s default behaviour, but docker volumes to the rescue!
 This is the command to run a postgres container that persist it&amp;rsquo;s data in /var/yourpgdata:
-docker run \ --name pgresql \ -d \ -p 5432:5432 \ -e POSTGRES_USER=yourpguser \ -e POSTGRES_PASSWORD=yourpgpass \ -e POSTGRES_DB=yourpgdb \ -v /var/yourpgdata:/var/lib/postgresql/data  Fine&amp;hellip; but what does this mean?</description>
-    </item>
-    
-    <item>
-      <title>TIL that you need to remove your stopped Docker containers from time to time (and how to do it)</title>
-      <link>https://erdii.engineering/2016/02/18/til-that-you-need-to-remove-your-stopped-docker-containers-from-time-to-time-and-how-to-do-it/</link>
-      <pubDate>Thu, 18 Feb 2016 15:47:57 +0000</pubDate>
-      
-      <guid>https://erdii.engineering/2016/02/18/til-that-you-need-to-remove-your-stopped-docker-containers-from-time-to-time-and-how-to-do-it/</guid>
-      <description>If you ever developed with Docker, you have to acknowledge that it is great!
+docker run \ --name pgresql \ -d \ -p 5432:5432 \ -e POSTGRES_USER=yourpguser \ -e POSTGRES_PASSWORD=yourpgpass \ -e POSTGRES_DB=yourpgdb \ -v /var/yourpgdata:/var/lib/postgresql/data Fine&amp;hellip; but what does this mean?</description></item><item><title>TIL that you need to remove your stopped Docker containers from time to time (and how to do it)</title><link>https://erdii.engineering/2016/02/18/til-that-you-need-to-remove-your-stopped-docker-containers-from-time-to-time-and-how-to-do-it/</link><pubDate>Thu, 18 Feb 2016 15:47:57 +0000</pubDate><guid>https://erdii.engineering/2016/02/18/til-that-you-need-to-remove-your-stopped-docker-containers-from-time-to-time-and-how-to-do-it/</guid><description>If you ever developed with Docker, you have to acknowledge that it is great!
 Ok&amp;hellip; you have to wrap your brain around an additional layer with all those caveats we know and love (volumes, path in- and outside of containers, &amp;hellip;), but it lets you bundle all your dependencies at build time and then ship an image that will run in every docker-compatible runtime!
-When you develop with Docker and do a lot of start/stop/build actions you will inevitably clutter your Docker Host with many unused containers.</description>
-    </item>
-    
-  </channel>
-</rss>
+When you develop with Docker and do a lot of start/stop/build actions you will inevitably clutter your Docker Host with many unused containers.</description></item></channel></rss>

@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Postgres on Shared thoughts</title>
-    <link>https://erdii.engineering/tags/postgres/</link>
-    <description>Recent content in Postgres on Shared thoughts</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 30 Mar 2016 16:01:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://erdii.engineering/tags/postgres/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>TIL how to run postgresql in docker and persist the database</title>
-      <link>https://erdii.engineering/2016/03/30/til-how-to-run-postgresql-in-docker-and-persist-the-database/</link>
-      <pubDate>Wed, 30 Mar 2016 16:01:04 +0000</pubDate>
-      
-      <guid>https://erdii.engineering/2016/03/30/til-how-to-run-postgresql-in-docker-and-persist-the-database/</guid>
-      <description>Today I needed a postgres database for development that persisted its data when recreating the container. That&amp;rsquo;s not docker&amp;rsquo;s default behaviour, but docker volumes to the rescue!
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgres on Shared thoughts</title><link>https://erdii.engineering/tags/postgres/</link><description>Recent content in Postgres on Shared thoughts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 30 Mar 2016 16:01:04 +0000</lastBuildDate><atom:link href="https://erdii.engineering/tags/postgres/index.xml" rel="self" type="application/rss+xml"/><item><title>TIL how to run postgresql in docker and persist the database</title><link>https://erdii.engineering/2016/03/30/til-how-to-run-postgresql-in-docker-and-persist-the-database/</link><pubDate>Wed, 30 Mar 2016 16:01:04 +0000</pubDate><guid>https://erdii.engineering/2016/03/30/til-how-to-run-postgresql-in-docker-and-persist-the-database/</guid><description>Today I needed a postgres database for development that persisted its data when recreating the container. That&amp;rsquo;s not docker&amp;rsquo;s default behaviour, but docker volumes to the rescue!
 This is the command to run a postgres container that persist it&amp;rsquo;s data in /var/yourpgdata:
-docker run \ --name pgresql \ -d \ -p 5432:5432 \ -e POSTGRES_USER=yourpguser \ -e POSTGRES_PASSWORD=yourpgpass \ -e POSTGRES_DB=yourpgdb \ -v /var/yourpgdata:/var/lib/postgresql/data  Fine&amp;hellip; but what does this mean?</description>
-    </item>
-    
-  </channel>
-</rss>
+docker run \ --name pgresql \ -d \ -p 5432:5432 \ -e POSTGRES_USER=yourpguser \ -e POSTGRES_PASSWORD=yourpgpass \ -e POSTGRES_DB=yourpgdb \ -v /var/yourpgdata:/var/lib/postgresql/data Fine&amp;hellip; but what does this mean?</description></item></channel></rss>

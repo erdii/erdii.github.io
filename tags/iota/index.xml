@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Iota on Shared thoughts</title>
-    <link>https://erdii.engineering/tags/iota/</link>
-    <description>Recent content in Iota on Shared thoughts</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 11 Aug 2017 16:43:12 +0200</lastBuildDate>
-    
-	<atom:link href="https://erdii.engineering/tags/iota/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>I wrote a IOTA Wallet Seed Generator Tool</title>
-      <link>https://erdii.engineering/2017/08/11/iota-wallet-seed-generator-tool/</link>
-      <pubDate>Fri, 11 Aug 2017 16:43:12 +0200</pubDate>
-      
-      <guid>https://erdii.engineering/2017/08/11/iota-wallet-seed-generator-tool/</guid>
-      <description>UPDATE: i changed the source of the generator - if you want to see the updated source, please head over to the Github repo
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Iota on Shared thoughts</title><link>https://erdii.engineering/tags/iota/</link><description>Recent content in Iota on Shared thoughts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 11 Aug 2017 16:43:12 +0200</lastBuildDate><atom:link href="https://erdii.engineering/tags/iota/index.xml" rel="self" type="application/rss+xml"/><item><title>I wrote a IOTA Wallet Seed Generator Tool</title><link>https://erdii.engineering/2017/08/11/iota-wallet-seed-generator-tool/</link><pubDate>Fri, 11 Aug 2017 16:43:12 +0200</pubDate><guid>https://erdii.engineering/2017/08/11/iota-wallet-seed-generator-tool/</guid><description>UPDATE: i changed the source of the generator - if you want to see the updated source, please head over to the Github repo
 Because I needed a quick (and reasonable secure) way to generate IOTA wallet seeds, I wrote a tool in Go.
 this is the source code - so you can compile it yourself. you can also download it here (signature - my keybase profile).
-Feel free to leave any feedback :)</description>
-    </item>
-    
-  </channel>
-</rss>
+Feel free to leave any feedback :)</description></item></channel></rss>

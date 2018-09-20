@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Webdav on Shared thoughts</title>
-    <link>https://erdii.engineering/tags/webdav/</link>
-    <description>Recent content in Webdav on Shared thoughts</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 23 Mar 2016 13:39:56 +0000</lastBuildDate>
-    
-	<atom:link href="https://erdii.engineering/tags/webdav/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>TIL how to (re)enable syncing your shared google calendars</title>
-      <link>https://erdii.engineering/2016/03/23/til-how-to-re-enable-syncing-your-shared-google-calendars/</link>
-      <pubDate>Wed, 23 Mar 2016 13:39:56 +0000</pubDate>
-      
-      <guid>https://erdii.engineering/2016/03/23/til-how-to-re-enable-syncing-your-shared-google-calendars/</guid>
-      <description>Today i opened my Calendar app on OS X and all my coworkers shared calendars had vanished&amp;hellip; And there&amp;rsquo;s no option to re-enable them from within the app itself. After a short investigation I found this link:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Webdav on Shared thoughts</title><link>https://erdii.engineering/tags/webdav/</link><description>Recent content in Webdav on Shared thoughts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 23 Mar 2016 13:39:56 +0000</lastBuildDate><atom:link href="https://erdii.engineering/tags/webdav/index.xml" rel="self" type="application/rss+xml"/><item><title>TIL how to (re)enable syncing your shared google calendars</title><link>https://erdii.engineering/2016/03/23/til-how-to-re-enable-syncing-your-shared-google-calendars/</link><pubDate>Wed, 23 Mar 2016 13:39:56 +0000</pubDate><guid>https://erdii.engineering/2016/03/23/til-how-to-re-enable-syncing-your-shared-google-calendars/</guid><description>Today i opened my Calendar app on OS X and all my coworkers shared calendars had vanished&amp;hellip; And there&amp;rsquo;s no option to re-enable them from within the app itself. After a short investigation I found this link:
 https://calendar.google.com/calendar/syncselect
-Just go there and tick all calendars you want to sync.</description>
-    </item>
-    
-  </channel>
-</rss>
+Just go there and tick all calendars you want to sync.</description></item></channel></rss>
